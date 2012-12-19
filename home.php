@@ -1,13 +1,20 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
+<?php
+//Decide which locale to use here
+//Possibly by scanning the URL and picking up a "/[iso_lang/" term
+
+$t = new ResourceBundle("el","./lang/bin");
+//$t = new ResourceBundle("gb","./lang/bin");
+?>
+
 <html>
 <head>
 
-	<title>Welcome to openEHR - Homepage</title>
+	<title><?=$t['messages']['PAGE_TITLE'] ?></title>
 	<?php include 'panel/headpanelhome.php' ?>
 	
 </head>
-
 
 <body>
 
@@ -33,9 +40,8 @@
 			  <area shape="rect" coords="0,0,220,150" href="what_is_openehr" alt="What is openEHR" />
 			</map> 
 			<div id="TextFrame">
-				<h1>What is<br/>openEHR?</h1>
-				<p>openEHR is about enabling ICT to effectively support all aspects of healthcare.
-				<br/><a href="what_is_openehr" style="line-height:200%;">Learn more</a></p>
+				<h1><?=$t['messages']['OEHR_DEF_Q']?></h1>
+				<p><?=$t['messages']['OEHR_DEF']?><br><a href="what_is_openehr" style="line-height:200%;"><?=$t['messages']['LEARN_MORE']?></a></p>
 			</div>
 		</div>
 		
@@ -45,7 +51,7 @@
 			  <area shape="rect" coords="0,0,220,150" href="who_is_using_openehr" alt="Who is using openEHR" />
 			</map> 
 			<div id="TextFrame">
-				<h1>Who is using<br/>openEHR?</h1>
+				<h1><?=$t['messages']['WHO_USES']?></h1>
 				<p>Companies, governments, universities, research centres all around the world.
 				<br/><a href="who_is_using_openehr" style="line-height:200%;">Learn more</a></p>
 			</div>
@@ -210,3 +216,4 @@ var dropdown=new MENU.dropdown.init("dropdown", {id:'menu', active:'menuhover'})
 
 </body>
 </html>
+

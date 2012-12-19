@@ -1,0 +1,9 @@
+gb:table {
+	messages {
+		PAGE_TITLE:string {"Welcome to openEHR - Homepage"}
+		OEHR_DEF_Q:string {"What is <br> openEHR"}
+		OEHR_DEF:string {"openEHR is about enabling ICT to effectively support all aspects of healthcare."}
+		LEARN_MORE:string {"Learn More"}
+		WHO_USES:string {"Who is using<br/>openEHR?"}
+	}
+}

@@ -1,0 +1,9 @@
+el:table {
+	messages {
+		PAGE_TITLE:string {"Καλώς ήλθατε στο openEHR - Αρχική Σελίδα"}
+		OEHR_DEF_Q:string {"Τι είναι το <br> openEHR?"}
+		OEHR_DEF:string {"Το openEHR αποσκοπεί στο να βελτιώσει την υποστήριξη των τεχνολογιών της πληροφορικής (ICT) στον τομέα της υγείας."}
+		LEARN_MORE:string {"Περισσότερες πληροφορίες"}
+		WHO_USES:string {"Ποιός χρησιμοποιεί το <br/>openEHR?"}
+	}
+}
